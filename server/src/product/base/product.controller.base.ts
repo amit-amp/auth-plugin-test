@@ -30,7 +30,7 @@ import { Product } from "./Product";
 import { OrderFindManyArgs } from "../../order/base/OrderFindManyArgs";
 import { Order } from "../../order/base/Order";
 import { OrderWhereUniqueInput } from "../../order/base/OrderWhereUniqueInput";
-@swagger.ApiBasicAuth()
+@swagger.ApiBearerAuth()
 @common.UseGuards(defaultAuthGuard.DefaultAuthGuard, nestAccessControl.ACGuard)
 export class ProductControllerBase {
   constructor(
